@@ -1,0 +1,33 @@
+.header {
+  width: 984px;
+  height: 983px;
+  padding-top: 7.16%;
+}
+
+.header__title {
+  margin: 0 auto;
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 1.042;
+  max-width: 720px;
+  text-align: center;
+}
+
+.header__subtitle {
+  padding-top: 3.2%;
+  margin: 0 auto;
+  font-family: "Inter";
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.2;
+  max-width: 720px;
+  text-align: center;
+}
+
+.header__image {
+  padding-top: 6.51%;
+  max-height: 615px;
+  width: 100%;
+  object-fit: fill;
+}

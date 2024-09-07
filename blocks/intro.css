@@ -1,0 +1,54 @@
+.intro {
+  width: 830px;
+  height: 607px;
+  padding-top: 9.35%;
+}
+
+.intro__title {
+  margin: 0;
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 1.075;
+}
+
+.intro__quote {
+  width: 738px;
+  margin: 0;
+  padding-top: 4.71%;
+  font-family: "Inter";
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.42;
+}
+
+.intro__author {
+  width: 732px;
+  margin: 0;
+  padding-top: 1.32%;
+  font-family: "Inter";
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.42;
+  text-align: end;
+}
+
+.intro__description {
+  width: 722px;
+  margin: 0;
+  padding-top: 3.85%;
+  font-family: "Inter";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+/*
+el subt a 31,46px
+la imagen a 64px
+el titulo a 92px
+la cita a 39.08px
+el autor a 10.9px
+descrip a 31.99
+el pie a 92px
+*/
