@@ -1,10 +1,11 @@
-.intro {
-  width: 830px;
-  height: 607px;
-  padding-top: 9.35%;
+.content {
+  width: 76.875%;
+  margin: auto;
 }
 
 .intro__title {
+  max-width: 830px;
+  padding-top: 9.35%;
   margin: 0;
   font-family: "Inter";
   font-weight: bold;
@@ -13,9 +14,9 @@
 }
 
 .intro__quote {
-  width: 738px;
-  margin: 0;
+  max-width: 738px;
   padding-top: 4.71%;
+  margin: 0;
   font-family: "Inter";
   font-weight: normal;
   font-size: 24px;
@@ -23,32 +24,85 @@
 }
 
 .intro__author {
-  width: 732px;
-  margin: 0;
+  max-width: 732px;
   padding-top: 1.32%;
+  margin: 0;
   font-family: "Inter";
   font-weight: normal;
   font-size: 24px;
   line-height: 1.42;
+  display: block;
   text-align: end;
 }
 
-.intro__description {
-  width: 722px;
-  margin: 0;
+.intro__text {
+  max-width: 722px;
   padding-top: 3.85%;
+  margin: 0;
   font-family: "Inter";
   font-weight: normal;
   font-size: 16px;
   line-height: 1.63;
 }
 
-/*
-el subt a 31,46px
-la imagen a 64px
-el titulo a 92px
-la cita a 39.08px
-el autor a 10.9px
-descrip a 31.99
-el pie a 92px
-*/
+@media screen and (max-width: 768px) {
+  .content {
+    width: 93.75%;
+  }
+
+  .intro__title {
+    max-width: 707px;
+    padding-top: 12.5%;
+    font-size: 45px;
+    line-height: 1.09;
+  }
+
+  .intro__quote {
+    max-width: 720px;
+    padding-top: 6.95%;
+    line-height: 1.42;
+  }
+
+  .intro__author {
+    max-width: 720px;
+    padding-top: 0;
+    line-height: 1.42;
+  }
+
+  .intro__text {
+    max-width: 720px;
+    padding-top: 4.45%;
+    line-height: 1.63;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content {
+    width: 90%;
+  }
+
+  .intro__title {
+    max-width: 288px;
+    padding-top: 22.23%;
+    font-size: 32px;
+    line-height: 1.094;
+  }
+
+  .intro__quote {
+    max-width: 288px;
+    padding-top: 13.89%;
+    line-height: 1.25;
+  }
+
+  .intro__author {
+    max-width: 288px;
+    padding-top: 3.48%;
+    line-height: 1.42;
+  }
+
+  .intro__text {
+    max-width: 288px;
+    padding-top: 11.12%;
+    line-height: 1.63;
+  }
+}

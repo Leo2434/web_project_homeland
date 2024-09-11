@@ -1,5 +1,26 @@
 .logo {
+  display: flex;
+}
+
+.logo_image {
+  margin: auto;
   width: 254.84px;
   height: 68.94px;
-  padding-top: 2.66%;
+  padding-top: 34px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo_image {
+    width: 254px;
+    height: 66px;
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logo_image {
+    width: 188px;
+    height: 52px;
+    padding-top: 20px;
+  }
 }
