@@ -28,8 +28,9 @@
 
 .header__image {
   width: 100%;
-  padding-top: 6.51%;
+  margin-top: 6.51%;
   object-fit: fill;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 768px) {
@@ -49,7 +50,7 @@
     line-height: 1.2;
   }
   .header__image {
-    padding-top: 3.91%;
+    margin-top: 3.91%;
   }
 }
 
@@ -69,6 +70,6 @@
     line-height: 1.25;
   }
   .header__image {
-    padding-top: 12.5%;
+    margin-top: 12.5%;
   }
 }

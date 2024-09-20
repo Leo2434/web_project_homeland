@@ -1,0 +1,140 @@
+.place {
+  display: grid;
+  grid-template-columns: 460px auto;
+  grid-template-rows: auto 460px auto;
+  grid-template-areas:
+    "title  website"
+    "image paragraphs"
+    "button paragraphs";
+  column-gap: 40px;
+  row-gap: 48px;
+}
+
+.place__title {
+  font-family: "Inter";
+  font-size: 72px;
+  max-width: 460px;
+  line-height: 1.15;
+  font-weight: 900;
+  grid-area: title;
+  margin: 0;
+}
+
+.place__image {
+  width: 100%;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  grid-area: image;
+  height: 460px;
+}
+
+.place__image:hover {
+  opacity: 0.5;
+}
+
+.place__website {
+  line-height: 1.15;
+  margin: 0;
+  grid-area: website;
+  align-self: end;
+}
+
+.place__heading {
+  color: #aaaaaa;
+  font-size: 15px;
+  line-height: 1.15;
+  margin-bottom: 2%;
+}
+
+.place__artist {
+  font-size: 18px;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.place__paragraphs {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  grid-area: paragraphs;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.place__paragraph {
+  margin: 0;
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  .place {
+    grid-template-columns: 340px auto;
+    grid-template-rows: auto 340px auto;
+    column-gap: 30px;
+    row-gap: 52px;
+  }
+  .place__title {
+    max-width: 340px;
+    font-size: 42px;
+  }
+  .place__image {
+    height: 340px;
+    width: 340px;
+  }
+  .place__website {
+    width: 352px;
+  }
+  .place__heading {
+    font-size: 12px;
+  }
+
+  .place__artist {
+    font-size: 18px;
+  }
+
+  .place__paragraphs {
+    font-size: 16px;
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .place {
+    grid-template-columns: 320px;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "title"
+      "website"
+      "image"
+      "paragraphs"
+      "button";
+    column-gap: 30px;
+    row-gap: 52px;
+  }
+  .place__title {
+    max-width: 320px;
+    font-size: 32px;
+    margin: 0 16px;
+  }
+  .place__image {
+    width: 100%;
+    height: 320px;
+  }
+  .place__website {
+    width: 288px;
+    margin: 0 16px;
+  }
+  .place__heading {
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  .place__artist {
+    font-size: 18px;
+  }
+
+  .place__paragraphs {
+    font-size: 16px;
+    margin: 0 16px;
+  }
+}
